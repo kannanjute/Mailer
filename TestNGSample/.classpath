@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Kannan/Eclipse_Workspace/TestNGSample/lib/testng-6.9.9.jar"/>
+	<classpathentry kind="lib" path="C:/Kannan/Eclipse_Workspace/TestNGSample/lib/ant-1.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Kannan/Eclipse_Workspace/TestNGSample/lib/ant-launcher-1.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Kannan/Eclipse_Workspace/TestNGSample/lib/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="C:/Kannan/Eclipse_Workspace/TestNGSample/lib/hamcrest-core-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Kannan/Eclipse_Workspace/TestNGSample/lib/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="C:/Kannan/Eclipse_Workspace/TestNGSample/lib/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="C:/Kannan/Eclipse_Workspace/TestNGSample/lib/snakeyaml-1.15.jar"/>
+	<classpathentry kind="lib" path="C:/Kannan/Eclipse_Workspace/TestNGSample/lib/selenium-server-standalone-2.53.1 (1).jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
