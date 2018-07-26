@@ -23,6 +23,8 @@ public class Driver {
 	{
 		if(browser.equals("Firefox"))
 		{
+			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
+			
 			driver=new FirefoxDriver();
 		}
 		if(browser.equals("Chrome")
@@ -43,7 +45,7 @@ public class Driver {
 	
 	@BeforeMethod
 	public void loadBrowser(){
-		loadBrowser("Chrome");
+		loadBrowser("Firefox");
 		driver.get("https://www.redbus.in");
 	}
 	

@@ -15,9 +15,9 @@ public class Test1 extends Driver{
 		
 		home.enterSearch();
 		
-		SearchPage search=new SearchPage(driver);
-		
-		search.search();
+//		SearchPage search=new SearchPage(driver);
+//		
+//		search.search();
 		
 		getscreenshot();
 	}

@@ -10,6 +10,7 @@
 	<classpathentry kind="lib" path="C:/Kannan/Eclipse_Workspace/TestNGSample/lib/jcommander-1.48.jar"/>
 	<classpathentry kind="lib" path="C:/Kannan/Eclipse_Workspace/TestNGSample/lib/junit-4.10.jar"/>
 	<classpathentry kind="lib" path="C:/Kannan/Eclipse_Workspace/TestNGSample/lib/snakeyaml-1.15.jar"/>
-	<classpathentry kind="lib" path="C:/Kannan/Eclipse_Workspace/TestNGSample/lib/selenium-server-standalone-2.53.1 (1).jar"/>
+	<classpathentry kind="lib" path="C:/Kannan/Eclipse_Workspace/TestNGSample/lib/jenkins-cli.jar"/>
+	<classpathentry kind="lib" path="C:/Kannan/Eclipse_Workspace/TestNGSample/lib/selenium-server-standalone-3.13.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
