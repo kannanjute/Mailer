@@ -8,7 +8,7 @@ import mail.SearchPage;;
 
 public class Test1 extends Driver{
 	
-	@Test 
+	@Test (groups = {"reg"} )
 	public void test() throws Exception
 	{
 		HomePage home=new HomePage(driver);
