@@ -2,9 +2,11 @@ package mail;
 
 import java.io.IOException;
 
+@Functionality(module= {"login"},story= {"1234"})
 public class Cli {
 
-	public static void main(String[] args) throws IOException {
+	@Functionality(module= {"login"},story= {"1234"})
+	public  void executeJenkinsCLI() throws IOException {
 		// TODO Auto-generated method stub
 		
 		
