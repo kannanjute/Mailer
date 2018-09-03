@@ -19,20 +19,7 @@ import mail.Driver;
 import mail.HomePage;
 import mail.SearchPage;;
 
-public class Test1 extends Driver {
-	@Functionality(module = "login", story = "1234")
-	@Test(groups = { "reg" })
-	void test() throws Exception {
-		HomePage home = new HomePage(driver);
-
-		home.enterSearch();
-
-		// SearchPage search=new SearchPage(driver);
-		//
-		// search.search();
-
-		getscreenshot();
-	}
+public class FindAffectedTC{
 
 	public static void main(String args[]) throws ClassNotFoundException, IOException {
 		/*

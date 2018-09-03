@@ -15,6 +15,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
+@Functionality(module= {"login1"},story= {"12341"})
 public class Driver {
 	
 	 protected static WebDriver driver;

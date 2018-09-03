@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 
-
+@Functionality(module= {"login"},story= {"1234"})
 public class HomePage {
 	
 	WebDriver driver;

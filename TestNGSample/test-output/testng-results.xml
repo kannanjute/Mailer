@@ -2,28 +2,31 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="example suite 1" duration-ms="21042" started-at="2018-07-26T15:24:38Z" finished-at="2018-07-26T15:24:59Z">
+  <suite name="Default suite" duration-ms="25092" started-at="2018-08-31T07:42:46Z" finished-at="2018-08-31T07:43:11Z">
     <groups>
+      <group name="reg">
+        <method signature="Test1.test()[pri:0, instance:mail.Test1@3e92efc3]" name="test" class="mail.Test1"/>
+      </group> <!-- reg -->
     </groups>
-    <test name="Regression suite 1" duration-ms="21042" started-at="2018-07-26T15:24:38Z" finished-at="2018-07-26T15:24:59Z">
+    <test name="Default test" duration-ms="25092" started-at="2018-08-31T07:42:46Z" finished-at="2018-08-31T07:43:11Z">
       <class name="mail.Test1">
-        <test-method status="PASS" signature="loadData()[pri:0, instance:mail.Test1@396a51ab]" name="loadData" is-config="true" duration-ms="9" started-at="2018-07-26T20:54:38Z" finished-at="2018-07-26T20:54:38Z">
+        <test-method status="PASS" signature="loadData()[pri:0, instance:mail.Test1@3e92efc3]" name="loadData" is-config="true" duration-ms="24" started-at="2018-08-31T13:12:46Z" finished-at="2018-08-31T13:12:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadData -->
-        <test-method status="PASS" signature="loadBrowser()[pri:0, instance:mail.Test1@396a51ab]" name="loadBrowser" is-config="true" duration-ms="10633" started-at="2018-07-26T20:54:38Z" finished-at="2018-07-26T20:54:49Z">
+        <test-method status="PASS" signature="loadBrowser()[pri:0, instance:mail.Test1@3e92efc3]" name="loadBrowser" is-config="true" duration-ms="14895" started-at="2018-08-31T13:12:46Z" finished-at="2018-08-31T13:13:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadBrowser -->
-        <test-method status="PASS" signature="test()[pri:0, instance:mail.Test1@396a51ab]" name="test" duration-ms="9833" started-at="2018-07-26T20:54:49Z" finished-at="2018-07-26T20:54:59Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:mail.Test1@3e92efc3]" name="test" duration-ms="9864" started-at="2018-08-31T13:13:01Z" finished-at="2018-08-31T13:13:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:mail.Test1@396a51ab]" name="quit" is-config="true" duration-ms="556" started-at="2018-07-26T20:54:59Z" finished-at="2018-07-26T20:54:59Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:mail.Test1@3e92efc3]" name="quit" is-config="true" duration-ms="272" started-at="2018-08-31T13:13:11Z" finished-at="2018-08-31T13:13:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- mail.Test1 -->
-    </test> <!-- Regression suite 1 -->
-  </suite> <!-- example suite 1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
