@@ -19,27 +19,7 @@ import mail.Driver;
 import mail.HomePage;
 import mail.SearchPage;;
 
-public class Test1 extends Driver {
-	@Functionality(module = "login", story = "1234")
-	@Test(groups = { "reg" })
-	void test() throws Exception {
-		HomePage home = new HomePage(driver);
-
-public class Test1 extends Driver{
-	
-	@Test (groups = {"reg"} )
-	public void test() throws Exception
-	{
-		HomePage home=new HomePage(driver);
-		
-		home.enterSearch();
-
-		// SearchPage search=new SearchPage(driver);
-		//
-		// search.search();
-
-		getscreenshot();
-	}
+public class FindAffectedTC{
 
 	public static void main(String args[]) throws ClassNotFoundException, IOException {
 		/*
@@ -267,7 +247,7 @@ public class Test1 extends Driver{
 			fileWriter = new FileWriter(file);
 			bufferedWriter = new BufferedWriter(fileWriter);
 
-			String htmlPage = "<html><body style=ï¿½background-color:#cccï¿½><b><h3><center><u>The Classes and Methods which affected by this Stories are:</u></center></h3></b>";
+			String htmlPage = "<html><body style=’background-color:#ccc’><b><h3><center><u>The Classes and Methods which affected by this Stories are:</u></center></h3></b>";
 
 			bufferedWriter.write(htmlPage);
 			bufferedWriter.append("<strong><h4>Classes:</h4></strong>");
