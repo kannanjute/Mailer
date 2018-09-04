@@ -163,7 +163,7 @@ System.out.println(functionalMethods);
 			dirs.add(new File(resource.getFile()));
 
 		}
-
+System.out.println(dirs);
 		ArrayList classes = new ArrayList();
 
 		for (File directory : dirs) {
