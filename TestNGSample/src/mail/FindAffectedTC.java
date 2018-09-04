@@ -98,7 +98,7 @@ public class FindAffectedTC{
 			}
 
 		}
-
+System.out.println(functionalMethods);
 		for (Method current : functionalMethods) {
 
 			if (Arrays.asList(current.getAnnotation(Functionality.class).story()).contains(affectedstory.trim())) {
@@ -247,7 +247,7 @@ public class FindAffectedTC{
 			fileWriter = new FileWriter(file);
 			bufferedWriter = new BufferedWriter(fileWriter);
 
-			String htmlPage = "<html><body style=’background-color:#ccc’><b><h3><center><u>The Classes and Methods which affected by this Stories are:</u></center></h3></b>";
+			String htmlPage = "<html><body style=â€™background-color:#cccâ€™><b><h3><center><u>The Classes and Methods which affected by this Stories are:</u></center></h3></b>";
 
 			bufferedWriter.write(htmlPage);
 			bufferedWriter.append("<strong><h4>Classes:</h4></strong>");
