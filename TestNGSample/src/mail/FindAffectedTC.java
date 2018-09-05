@@ -7,8 +7,10 @@ import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.Enumeration;
 import java.util.List;
 
@@ -21,6 +23,8 @@ import mail.SearchPage;;
 
 public class FindAffectedTC{
 
+//	@Test
+//	public void main1() throws ClassNotFoundException, IOException {
 	public static void main(String args[]) throws ClassNotFoundException, IOException {
 		/*
 		 * java.lang.annotation.Annotation[] annotations =
@@ -53,9 +57,9 @@ public class FindAffectedTC{
 
 		// System.getenv().get(key) // to get parameter from jenkins
 //		String affectedstory = args[0];
-		String affectedstory = "1234";
+		String affectedstory = args[0];
 		Class[] allclass = getClasses("");
-
+System.out.println(allclass.length);
 		List<Method> functionalMethods = new ArrayList<Method>();
 
 		List<Method> affectedMethods = new ArrayList<Method>();
@@ -71,7 +75,6 @@ public class FindAffectedTC{
 		for (int i = 0; i < allclass.length; i++) {
 
 			if (allclass[i].isAnnotationPresent(Functionality.class)) {
-
 				functionalClass.add(allclass[i]);
 
 				String stories[] = ((Functionality) allclass[i].getAnnotation(Functionality.class)).story();
@@ -98,7 +101,7 @@ public class FindAffectedTC{
 			}
 
 		}
-System.out.println(functionalMethods);
+		System.out.println(functionalMethods);
 		for (Method current : functionalMethods) {
 
 			if (Arrays.asList(current.getAnnotation(Functionality.class).story()).contains(affectedstory.trim())) {
@@ -138,7 +141,7 @@ System.out.println(functionalMethods);
 
 		System.out.println(affectedClass);
 		System.out.println(affectedMethods);
-		createReports(affectedClass, affectedMethods);
+		createReports(affectedClass, affectedMethods, affectedstory);
 
 	}
 
@@ -160,10 +163,9 @@ System.out.println(functionalMethods);
 
 			URL resource = (URL) resources.nextElement();
 
-			dirs.add(new File(resource.getFile()));
+			dirs.add(new File(resource.getFile().toString().replace("%20", " ")));
 
 		}
-System.out.println(dirs);
 		ArrayList classes = new ArrayList();
 
 		for (File directory : dirs) {
@@ -199,13 +201,11 @@ System.out.println(dirs);
 		List classes = new ArrayList();
 
 		if (!directory.exists()) {
-
 			return classes;
 
 		}
 
 		File[] files = directory.listFiles();
-
 		for (File file : files) {
 
 			if (file.isDirectory()) {
@@ -218,7 +218,6 @@ System.out.println(dirs);
 					classes.addAll(findClasses(file, packageName1 + "." + file.getName()));
 
 			} else if (file.getName().endsWith(".class")) {
-
 				if (packageName1.length() == 0)
 					classes.add(Class.forName(file.getName().substring(0, file.getName().length() - 6)));
 				else
@@ -233,9 +232,11 @@ System.out.println(dirs);
 
 	}
 
-	public static void createReports(List classes, List methods) {
-		new File("C://Reports").mkdir();
-		File file = new File("C://Reports//AffectedModules.html");
+	public static void createReports(List classes, List methods, String affectedstory) {
+		String time = new SimpleDateFormat("dd-MM-yyyy HH_mm_ss").format(new Date()) ;
+		if(!new File("C://Reports").exists())
+			new File("C://Reports").mkdir();
+		File file = new File("C://Reports//AffectedModules Story "+affectedstory+"_"+time+".html");
 		new File("C://Reports").mkdir();
 
 		/*
