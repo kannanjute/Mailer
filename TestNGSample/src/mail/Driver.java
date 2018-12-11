@@ -46,7 +46,7 @@ public class Driver {
 	
 	@BeforeMethod
 	public void loadBrowser(){
-		loadBrowser("Firefox");
+		loadBrowser("Chrome");
 		driver.get("https://www.redbus.in");
 	}
 	
